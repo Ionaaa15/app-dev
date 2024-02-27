@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #ffffff; /* Set background color to white */
+    color: black; 
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 130px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0 1.7rem;
+    transition: all 0.5s linear;
+    background: rgb(238, 137, 42); /* Set sidebar background color to orange */
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: hwb(27 25% 6% / 0.856);
+}
+
+.menu a {
+    color: black; 
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a i {
+    font-size: 1.2rem;
+}
+.logout{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/**** main body section ****/
+.header--content {
+    border: 2px solid #e0e0e0; 
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px; 
+    margin-left: 50px; 
+    margin-top: 20px; 
+    position: relative; 
+}
+
+.header--title {
+    color: black;
+}
+
+.main--title,
+.title {
+    position: absolute;
+    left: 10px; 
+}
+
+.main--title {
+    top: 100px; 
+}
+
+.title {
+    top: 140px;
+    padding: 20px; 
+    border: 2px solid hsl(60, 65%, 78%); 
+    background-color: rgb(255, 255, 203);
+    border-radius: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.header--content {
+    border: 2px solid rgb(201, 194, 194); 
+    padding: 1rem 20px; 
+    background-color: hwb(0 78% 19%);
+    border-radius: 10px; 
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 230%; 
+    box-sizing: border-box; 
+    position: relative;
+}
+
+
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffffff !important;
+    border-radius: 10px;
+    padding: 40px 4rem !important; 
+    margin-bottom: 1rem;
+    border: 8px solid #808080 !important; 
+}
+
+
+
+.header--title {
+    color: black;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+}
+
+/***** card container *****/
+.card--container {
+    background: #e0e0e0;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main--title {
+
+}
